@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apple Inc. - Home</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+        }
+      .header {
+            background-color: #6a5acd; /* Purple header */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+      .product {
+            margin: 10px;
+        }
+      .product img {
+            width: 100%;
+            max-width: 300px;
+        }
+      .product p {
+            margin: 10px;
+        }
+      .footer {
+            background-color: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            background-color: #6a5acd;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="header">
+            <button role="button">Home</button>
+            <button role="button">Product</button>
+        </div>
+    </header>
+    <main role="main">
+        <div class="product">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-13-pro-apple-event_09072021_big.jpg.large.jpg" alt="iPhone 13 Pro">
+            <p>The new iPhone. Say hello to the future.</p>
+        </div>
+        <div class="product">
+            <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-imac-apple-event_04202021_big.jpg.large.jpg" alt="iMac">
+            <p>The new iMac. 7 colors. A lot to love.</p>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer">
+            &copy; 2022 Apple Inc.
+        </div>
+    </footer>
+    <form role="form">
+        <h3>Contact Us</h3>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Your email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
